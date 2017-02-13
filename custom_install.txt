@@ -1,0 +1,3 @@
+apt install php mysql-server memcached php-bcrypt
+apt install composer
+apt install php-{opcache,pdo,calendar,ctype,exif,fileinfo,ftp,gettext,iconv,json,memcached,mysqli,phar,posix,readline,shmop,sockets,sysvmsg,sysvsem,tokenizer}
