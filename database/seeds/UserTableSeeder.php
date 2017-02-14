@@ -10,6 +10,7 @@ class UserTableSeeder extends Seeder
         DB::table('users')->insert([
             'username' => 'admin',
             'password' => Hash::make('password'),
+            'api_token' => Hash::make('password'),
             'email' => 'rclifford@cybershade.org',
             'is_verified' => true,
             'is_active' => true,

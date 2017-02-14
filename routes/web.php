@@ -1,5 +1,12 @@
 <?php
 
+use Illuminate\Http\Response;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+
+use App\User;
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -15,13 +22,30 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-// $app->group(['prefix' => 'auth']);
+// Login to app
+$app->post('login/auth', ['as' => 'login.auth', function(Request $request){
+	$username = $request->input('username');
+	$password = $request->input('password');
+
+	$user = User::where('username', $username)->first();
+
+	$apiToken = '';
+	
+	if(Hash::check($password, $user->password)) {
+		$apiToken = $user->api_token;
+	}
+
+	return response([
+		'api_token' => $apiToken,
+	]);
+}]);
 
 
 $app->group(['middleware' => 'auth'], function() use ($app){
 
 	// /api/
 	$app->group(['prefix' => 'api', 'as' => 'api'], function() use ($app){
+
 
 		// /api/reporting/
 		$app->group(['prefix' => 'reporting', 'as' => 'reporting'], function() use ($app){
@@ -34,4 +58,3 @@ $app->group(['middleware' => 'auth'], function() use ($app){
 		});
 	});
 });
-
