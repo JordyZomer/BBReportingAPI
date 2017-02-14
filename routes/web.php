@@ -55,6 +55,24 @@ $app->group(['middleware' => 'auth'], function() use ($app){
 				'as' => 'create',
 				'uses' => 'ReportingController@createNewReport', // Return ReportID
 			]);
+
+
+			$app->group(['prefix' => '{reportId}/issue', 'as' => 'issue'], function($reportId) use ($app){
+
+				// Get Issue By Id
+				$app->get('{id}', [
+					'as' => 'fetch', 
+					'uses' => 'IssueController@getIssueById',
+				]);
+
+				// Add a new issue to the report
+				$app->post('{id}', [
+					'as' => 'submit',
+					'uses' => 'IssueController@addNewIssueToReport',
+				]);
+
+
+			});
 		});
 	});
 });

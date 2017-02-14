@@ -19,8 +19,12 @@ class CreateReportIssuesTable extends Migration
             $table->integer('type_id');
             $table->integer('author_id');
             $table->string('title', 255);
+            $table->longText('introduction');
+            $table->longText('technical_details');
+            $table->longText('remediation');
+            $table->longText('uploads')->nullable();
             $table->float('cvss', 4,2);
-            $table->string('custom_severity', 80);
+            $table->string('custom_severity', 80)->nullable();
             $table->timestamps();
         });
     }
