@@ -52,7 +52,6 @@ return array(
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Cron\\' => array($vendorDir . '/mtdowling/cron-expression/src/Cron'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
-    'Caffeinated\\Modules\\' => array($vendorDir . '/caffeinated/modules/src'),
     'Appzcoder\\LumenRoutesList\\' => array($vendorDir . '/appzcoder/lumen-routes-list/src'),
     'App\\' => array($baseDir . '/app'),
 );

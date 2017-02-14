@@ -26,6 +26,7 @@ class ReportingController extends Controller {
 	}
 
 	public function generateReport($reportId) {
+		
 		dd($reportId);
 	}
 }

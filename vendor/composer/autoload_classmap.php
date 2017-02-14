@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'CompanyDetailsTableSeeder' => $baseDir . '/database/seeds/CompanyDetailsTableSeeder.php',
+    'ConfigTableSeeder' => $baseDir . '/database/seeds/ConfigTableSeeder.php',
     'CreateCompanyDetailsTable' => $baseDir . '/database/migrations/2017_02_13_161204_create_company_details_table.php',
     'CreateCompanyReportTable' => $baseDir . '/database/migrations/2017_02_13_161139_create_company_report_table.php',
     'CreateCompanyUsersTable' => $baseDir . '/database/migrations/2017_02_14_130950_create_company_users_table.php',
