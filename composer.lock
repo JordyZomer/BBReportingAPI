@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2cddac66a29ef7a0ab680e735dacc438",
-    "content-hash": "294dfe0b8cf7162a8bb8f5811912e74a",
+    "hash": "2a38b663ccf395082843a5abf0f369ae",
+    "content-hash": "efcc438706427af9a076be3b0ac79d75",
     "packages": [
         {
             "name": "appzcoder/lumen-routes-list",
@@ -48,6 +48,60 @@
                 "route list"
             ],
             "time": "2015-08-25 14:03:42"
+        },
+        {
+            "name": "caffeinated/modules",
+            "version": "v4.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/modules.git",
+                "reference": "5295ebeb54ce5fc72084a52766d98c750b64f993"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/modules/zipball/5295ebeb54ce5fc72084a52766d98c750b64f993",
+                "reference": "5295ebeb54ce5fc72084a52766d98c750b64f993",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "^5.3",
+                "illuminate/database": "^5.3",
+                "illuminate/filesystem": "^5.3",
+                "illuminate/routing": "^5.3",
+                "illuminate/support": "^5.3",
+                "php": ">=5.6.4"
+            },
+            "suggest": {
+                "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Caffeinated\\Modules\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Modules",
+            "keywords": [
+                "caffeinated",
+                "laravel",
+                "modules"
+            ],
+            "time": "2017-01-25 17:21:36"
         },
         {
             "name": "doctrine/inflector",
@@ -925,6 +979,62 @@
             "description": "The Illuminate Queue package.",
             "homepage": "https://laravel.com",
             "time": "2017-02-02 15:55:52"
+        },
+        {
+            "name": "illuminate/routing",
+            "version": "v5.4.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/routing.git",
+                "reference": "023c0d3ad9207d0e2ad77c74e37215ae35a66fe7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/routing/zipball/023c0d3ad9207d0e2ad77c74e37215ae35a66fe7",
+                "reference": "023c0d3ad9207d0e2ad77c74e37215ae35a66fe7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "5.4.*",
+                "illuminate/contracts": "5.4.*",
+                "illuminate/http": "5.4.*",
+                "illuminate/pipeline": "5.4.*",
+                "illuminate/session": "5.4.*",
+                "illuminate/support": "5.4.*",
+                "php": ">=5.6.4",
+                "symfony/debug": "~3.2",
+                "symfony/http-foundation": "~3.2",
+                "symfony/http-kernel": "~3.2",
+                "symfony/routing": "~3.2"
+            },
+            "suggest": {
+                "illuminate/console": "Required to use the make commands (5.4.*).",
+                "symfony/psr-http-message-bridge": "Required to psr7 bridging features (0.2.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Routing\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Routing package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-02-01 16:15:08"
         },
         {
             "name": "illuminate/session",
@@ -2042,6 +2152,81 @@
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
             "time": "2017-02-03 12:11:38"
+        },
+        {
+            "name": "symfony/routing",
+            "version": "v3.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/routing.git",
+                "reference": "af464432c177dbcdbb32295113b7627500331f2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/af464432c177dbcdbb32295113b7627500331f2d",
+                "reference": "af464432c177dbcdbb32295113b7627500331f2d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "conflict": {
+                "symfony/config": "<2.8"
+            },
+            "require-dev": {
+                "doctrine/annotations": "~1.0",
+                "doctrine/common": "~2.2",
+                "psr/log": "~1.0",
+                "symfony/config": "~2.8|~3.0",
+                "symfony/expression-language": "~2.8|~3.0",
+                "symfony/http-foundation": "~2.8|~3.0",
+                "symfony/yaml": "~2.8|~3.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "For using the annotation loader",
+                "symfony/config": "For using the all-in-one router or any loader",
+                "symfony/dependency-injection": "For loading routes from a service",
+                "symfony/expression-language": "For using expression matching",
+                "symfony/http-foundation": "For using a Symfony Request object",
+                "symfony/yaml": "For using the YAML loader"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Routing\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Routing Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "router",
+                "routing",
+                "uri",
+                "url"
+            ],
+            "time": "2017-01-28 02:37:08"
         },
         {
             "name": "symfony/translation",

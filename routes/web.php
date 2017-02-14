@@ -22,6 +22,7 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
+
 // Login to app
 $app->post('login/auth', ['as' => 'login.auth', function(Request $request){
 	$username = $request->input('username');
@@ -56,6 +57,12 @@ $app->group(['middleware' => 'auth'], function() use ($app){
 				'uses' => 'ReportingController@createNewReport', // Return ReportID
 			]);
 
+			// Generate the report according to the current client
+			$app->get('{reportId}/generate', [
+				'as' => 'generate',
+				'uses' => 'ReportingController@generateReport',
+			]);
+
 
 			$app->group(['prefix' => '{reportId}/issue', 'as' => 'issue'], function($reportId) use ($app){
 
@@ -70,8 +77,6 @@ $app->group(['middleware' => 'auth'], function() use ($app){
 					'as' => 'submit',
 					'uses' => 'IssueController@addNewIssueToReport',
 				]);
-
-
 			});
 		});
 	});

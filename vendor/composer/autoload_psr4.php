@@ -11,6 +11,7 @@ return array(
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
+    'Symfony\\Component\\Routing\\' => array($vendorDir . '/symfony/routing'),
     'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
     'Symfony\\Component\\HttpKernel\\' => array($vendorDir . '/symfony/http-kernel'),
     'Symfony\\Component\\HttpFoundation\\' => array($vendorDir . '/symfony/http-foundation'),
@@ -26,6 +27,7 @@ return array(
     'Illuminate\\Translation\\' => array($vendorDir . '/illuminate/translation'),
     'Illuminate\\Support\\' => array($vendorDir . '/illuminate/support'),
     'Illuminate\\Session\\' => array($vendorDir . '/illuminate/session'),
+    'Illuminate\\Routing\\' => array($vendorDir . '/illuminate/routing'),
     'Illuminate\\Queue\\' => array($vendorDir . '/illuminate/queue'),
     'Illuminate\\Pipeline\\' => array($vendorDir . '/illuminate/pipeline'),
     'Illuminate\\Pagination\\' => array($vendorDir . '/illuminate/pagination'),
@@ -50,6 +52,7 @@ return array(
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Cron\\' => array($vendorDir . '/mtdowling/cron-expression/src/Cron'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
+    'Caffeinated\\Modules\\' => array($vendorDir . '/caffeinated/modules/src'),
     'Appzcoder\\LumenRoutesList\\' => array($vendorDir . '/appzcoder/lumen-routes-list/src'),
     'App\\' => array($baseDir . '/app'),
 );

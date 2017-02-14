@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\User;
-use App\Issue;
+// use App\Issue;
 use App\Report;
 
 class ReportingController extends Controller {
@@ -16,12 +16,16 @@ class ReportingController extends Controller {
 
 		$report = new Report();
 		$report->internal_report_name = $name;
-		// $report->company_id = User::where('api_token')->first(['company_id']);
+		$report->company_id = User::where('api_token', $request->input('api_token'))->first(['company_id']);
 
 		if($report->save()) {
 			return response(['success' => true, 'report_id' => $report->id]);
 		}
 
 		return response(['success' => false]);
+	}
+
+	public function generateReport($reportId) {
+		dd($reportId);
 	}
 }

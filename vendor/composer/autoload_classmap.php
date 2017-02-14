@@ -10,6 +10,8 @@ return array(
     'CreateCompanyDetailsTable' => $baseDir . '/database/migrations/2017_02_13_161204_create_company_details_table.php',
     'CreateCompanyReportTable' => $baseDir . '/database/migrations/2017_02_13_161139_create_company_report_table.php',
     'CreateCompanyUsersTable' => $baseDir . '/database/migrations/2017_02_14_130950_create_company_users_table.php',
+    'CreateConfigTable' => $baseDir . '/database/migrations/2017_02_14_165827_create_config_table.php',
+    'CreateDownloadsTable' => $baseDir . '/database/migrations/2017_02_14_170043_create_downloads_table.php',
     'CreateReportIssuesTable' => $baseDir . '/database/migrations/2017_02_13_160510_create_report_issues_table.php',
     'CreateReportReportTable' => $baseDir . '/database/migrations/2017_02_13_161040_create_report_report_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2017_02_13_161210_create_users_table.php',
